@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GL Task 1</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+    <p>Результат в консоли</p>
+    <script>
+      fetch('https://reqres.in/api/users/10')
+        .then((response) => response.json())
+        .then((user) => console.log(user.data.first_name, user.data.last_name))
+    </script>
+  </body>
+</html>
